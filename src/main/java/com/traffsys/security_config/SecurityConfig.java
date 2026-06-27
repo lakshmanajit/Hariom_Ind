@@ -39,6 +39,7 @@ public class SecurityConfig {
                 .requestMatchers("/defect/**").hasRole("ADMIN")
                 .requestMatchers("/inspection/**").hasRole("ADMIN")
                .requestMatchers("/lotbatch/**").hasRole("ADMIN")
+               .requestMatchers("/QCResultMaster/**").hasRole("ADMIN")
                 
                 // user APIs
                 .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")

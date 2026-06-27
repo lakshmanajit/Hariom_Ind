@@ -144,21 +144,6 @@ public class inspectionMasterServices {
 	}
 
 
-	/*
-	 * public Object updateIns(InspectionMaster inmaster) { Authentication auth=
-	 * SecurityContextHolder.getContext().getAuthentication(); String username=
-	 * auth.getName(); Map<String, Object> response = new HashMap<>();
-	 * 
-	 * InspectionMaster insdb=null;
-	 * System.out.println("+++++++++++++++++++++++++++++++"+inmaster.toString());
-	 * if(inmaster.getId()>0) { inmaster.setUpdatedBy(username);
-	 * inmaster.setUpdatedDate(LocalDateTime.now()); insdb=
-	 * inspectionMasterInterface.save(inmaster); } if(insdb!=null) {
-	 * response.put("status", 200); response.put("message","updated Successfully");
-	 * }
-	 * 
-	 * 
-	 * return response; }
-	 */
+	
 
 }

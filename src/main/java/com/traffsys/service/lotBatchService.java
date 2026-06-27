@@ -64,6 +64,7 @@ public class lotBatchService {
 	{
 		PageRequest pageData=  PageRequest.of(page, size);
 		Page<LotBatchMaster> response= batchInterface.findAll(pageData);
+		
 		return response.map(LotBatchMaster ->{
 			LotBatchDto lbt = new LotBatchDto();
 			lbt.setId(LotBatchMaster.getId());

@@ -57,7 +57,6 @@ public class lotBatchController
 	@PutMapping("/update/{id}")
 	public ResponseEntity<?> updatelotData(@PathVariable Long id, @RequestBody LotBatchDto dto)
 	{
-		System.out.println("hit update controller********");
 		return ResponseEntity.ok(batchService.updateRowData(id,dto));
 		
 	}
