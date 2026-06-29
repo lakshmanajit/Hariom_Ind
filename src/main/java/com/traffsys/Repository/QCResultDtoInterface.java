@@ -13,4 +13,6 @@ public interface QCResultDtoInterface extends JpaRepository<QCResultMaster, Long
 	Optional<QCResultMaster> findByLotBatchAndInspection(
 	        LotBatchMaster lotBatch,
 	        InspectionMaster inspection);
+
+	Long countByResultStatus(String resultStatus);
 }

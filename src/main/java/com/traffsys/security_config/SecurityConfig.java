@@ -32,6 +32,7 @@ public class SecurityConfig {
                 .requestMatchers("/auth/**").permitAll()
 
                 // admin APIs
+                .requestMatchers("/home/**").hasAnyRole("USER","ADMIN")
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 .requestMatchers("/product/**").hasRole("ADMIN")
                 .requestMatchers("/role/**").permitAll()
